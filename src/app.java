@@ -13,5 +13,15 @@ public class app {
         System.out.println(texto4);
         System.out.println(texto5);
         System.out.println("hola");
+
+        //declarando un array de string
+        String[] consultas = {"user.name","os.name"};
+        //consultas = {"user.name","os.name"};
+        int cantidad = consultas.length;
+        System.out.println("cantidad "+cantidad);
+        for (int i = 0; i < consultas.length; i++) {
+            System.out.println("datos del sistema: "+System.getProperty(consultas[i]));
+
+        }
     }
 }
